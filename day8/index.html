@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let arr1 = [2,5,8,5,6,9,4]
+        // let resultArr1 = arr1.map((num)=>{
+            let resultArr1 = arr1.filter((num)=>{
+            return num %2 ==0
+        })
+        console.log(resultArr1);
+        
+        let arr2 =[2,-3,6,8,-4,9,-6]
+        let resultArr2 = arr2.filter((num)=>{
+            return num < 0 
+        })
+        console.log(resultArr2);
+        
+        let arr3 =[2,-3,6,8,-4,9,-6]
+        let resultArr3 = arr3.filter((num)=>{
+            return num > 0 
+        })
+        console.log(resultArr3);
+
+
+        let arr4 = ["apple","banana","kiwi","orrange"]
+        let reaultArr4 = arr4.filter((name)=>{
+         return name.length > 5
+        })
+        console.log(reaultArr4);
+        
+        let arr5 = ["Aman", "Kunal","Mohit","Anura"]
+        // Output [Aman, Anura]
+        let resultArr5 = arr5.filter((name)=>{
+            return name.startsWith("A");
+        })
+        console.log(resultArr5);
+
+        let arr7 =[0,"hii","",null,46,undefined]
+        //[hii,46]
+
+        let resultArr7 =arr7.filter((value)=>{
+         return value ;
+        })
+        console.log(resultArr7);
+        
+        let arr8 = ["Abhishek", "Depak","Brijesh","Cat"]
+        console.log(arr8.sort());
+        console.log(arr8.reverse());
+        
+
+        let resultPOP = arr8.pop();
+        console.log(arr8);
+        console.log(resultPOP);
+
+        let resultPush = arr8.push("Rohit");
+        console.log(arr8);
+        console.log(resultPush);
+
+        let resultShift = arr8.shift("Rohit");
+        console.log(arr8);
+        console.log(resultShift);
+
+        let resultUnshift = arr8.unshift("Ram");
+        console.log(arr8);
+        console.log(resultUnshift);
+        // map, filtter, foreach
+        
+    </script>
+</body>
+</html>
